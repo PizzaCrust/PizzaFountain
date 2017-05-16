@@ -48,6 +48,10 @@ repositories {
     mavenCentral()
 }
 
+project(":FountainAPI") {
+    apply from: rootProject.file('FountainAPI/build.gradle')
+}
+
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
